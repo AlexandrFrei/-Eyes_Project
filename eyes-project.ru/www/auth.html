@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="libs.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="wrap">
+        <header class="header py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-auto ml-auto">
+                        <div class="auth">
+                            <a class="auth-link" href="auth.html">Вход</a>
+                            <a class="auth-link" href="registration.html">Регистрация</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main d-flex align-items-center justify-content-center">
+            <form class="form-auth" action="login.php" method="post">
+                <h1>Вход в учетную запись</h1>
+                <p>
+                    <label for="login">Логин</label>
+                    <input type="text" name="login" placeholder="Логин" required>
+                </p>
+                <p>
+                    <label for="password">Пароль</label>
+                    <input type="password" name='password' placeholder="Пароль" required>
+                </p>
+                <p>
+                    <button type="submit" class="gradient-btn" name="submit"><span>Войти</span></button>
+                </p>        
+            </form>
+        </main>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js" integrity="sha256-CkQcTxuQyZLqzqWqntH3FDxeDKMV0m7cw0aM5eph4Do=" crossorigin="anonymous"></script>
+</body>
+</html>

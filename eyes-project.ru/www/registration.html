@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+        <link rel="stylesheet" href="libs.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="header py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-auto ml-auto">
+                        <div class="auth">
+                            <a class="auth-link" href="auth.html">Вход</a>
+                            <a class="auth-link" href="registration.html">Регистрация</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main d-flex align-items-center justify-content-center">
+            <form class="form-auth" action="register.php" method="post">
+                <h1>Регистрация</h1>
+                <div class="form-auth-group">   
+                    <label for="login">Логин</label>
+                    <input type="text" name="login" placeholder="Логин" required>
+                </div>
+                <div class="form-auth-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" name='password' placeholder="Пароль" required>
+                </div>
+                <div class="form-auth-group">
+                    <label for="repeat-password">Повторите пароль</label>
+                    <input type="password" name='repeat-password' placeholder="Повторите пароль" required>
+                </div>
+                <div>
+                    
+                   <button type="submit" class="gradient-btn" name="submit"><span>Зарегистрироваться</span></button>
+                </div>      
+            </form>
+        </main>
+    
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js" integrity="sha256-CkQcTxuQyZLqzqWqntH3FDxeDKMV0m7cw0aM5eph4Do=" crossorigin="anonymous"></script>
+    <script src="menu-animation.js"></script>
+</body>
+</html>
